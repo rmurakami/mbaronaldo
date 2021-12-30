@@ -9,7 +9,7 @@ metadata:
     template.openshift.io/expose-username: '{.data[''database-user'']}'
   selfLink: /api/v1/namespaces/fiap-aso-grupo14/secrets/sample-database
   name: sample-database  
-  namespace: fiap-aso-grupo14
+  namespace: fiap-aso-grupo14ronaldo
   labels:
     app: sample-database
     app.kubernetes.io/component: sample-database
@@ -29,7 +29,7 @@ metadata:
     openshift.io/generated-by: OpenShiftNewApp
   selfLink: /api/v1/namespaces/fiap-aso-grupo14/services/sample-database
   name: sample-database
-  namespace: fiap-aso-grupo14
+  namespace: fiap-aso-grupo14roanaldo
   labels:
     app: sample-database
     app.kubernetes.io/component: sample-database
@@ -57,7 +57,7 @@ metadata:
     volume.beta.kubernetes.io/storage-provisioner: kubernetes.io/cinder
   selfLink: /api/v1/namespaces/fiap-aso-grupo14/persistentvolumeclaims/sample-database
   name: sample-database
-  namespace: fiap-aso-grupo14
+  namespace: fiap-aso-grupo14ronaldo
   labels:
     app: sample-database
     app.kubernetes.io/component: sample-database
@@ -82,7 +82,7 @@ metadata:
     /apis/apps.openshift.io/v1/namespaces/fiap-aso-grupo14/deploymentconfigs/sample-database
   name: sample-database
   generation: 2
-  namespace: fiap-aso-grupo14
+  namespace: fiap-aso-grupo14ronaldo
   labels:
     app: sample-database
     app.kubernetes.io/component: sample-database

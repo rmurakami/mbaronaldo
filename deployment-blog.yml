@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: blog-config-map
-  namespace: fiap-aso-grupo14
+  namespace: fiap-aso-grupo14ronaldo
 data:
   BLOG_SITE_NAME: FIAP Grupo 14
   BLOG_BANNER_COLOR: blue
@@ -21,7 +21,7 @@ metadata:
   selfLink: /apis/apps/v1/namespaces/fiap-aso-grupo14/deployments/blog-django-py
   name: blog-django-py  
   generation: 2
-  namespace: fiap-aso-grupo14
+  namespace: fiap-aso-grupo14ronaldo
   labels:
     app: blog-django-py
     app.kubernetes.io/component: blog-django-py
@@ -77,7 +77,7 @@ metadata:
     openshift.io/generated-by: OpenShiftWebConsole
   selfLink: /api/v1/namespaces/fiap-aso-grupo14/services/blog-django-py
   name: blog-django-py
-  namespace: fiap-aso-grupo14
+  namespace: fiap-aso-grupo14ronaldo
   labels:
     app: blog-django-py
     app.kubernetes.io/component: blog-django-py
@@ -106,7 +106,7 @@ metadata:
   selfLink: >-
     /apis/route.openshift.io/v1/namespaces/fiap-aso-grupo14/routes/blog-django-py  
   name: blog-django-py
-  namespace: fiap-aso-grupo14
+  namespace: fiap-aso-grupo14ronaldo
   labels:
     app: blog-django-py
     app.kubernetes.io/component: blog-django-py
