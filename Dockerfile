@@ -1,14 +1,15 @@
 FROM ubi8/ubi:8.3
 
-MAINTAINER grupo14  <grupo14@fiap.com.br>
+LABEL description="Teste da instalação do blog"
 
-LABEL description="A custom Apache container based on UBI 8"
+RUN oc login -u  frhqle -p  5aa207c0c76247b28786
 
-RUN yum install -y httpd && \
-    yum clean all
+RUN oc new-project fiap-aso-grupo14 --display-name 'fiap-aso-grupo14murakami'
 
-RUN echo "Grupo 14 - rm340407 - " > /var/www/html/index.html
+RUN oc create -f https://raw.githubusercontent.com/marciotorquato/fiap-aso6-ocp/main/deployment-blog.yml
 
-EXPOSE 80
+RUN oc create -f https://raw.githubusercontent.com/rmurakami/mbaronaldo/main/hpa-scale.yml
 
-CMD ["httpd", "-D", "FOREGROUND"]
+RUN oc create -f https://raw.githubusercontent.com/rmurakami/mbaronaldo/main/hpa-scale.yml
+
+RUN Oc create -f https://raw.githubusercontent.com/rmurakami/mbaronaldo/main/database-blog.yml 
