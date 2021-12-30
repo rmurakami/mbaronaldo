@@ -18,7 +18,7 @@ metadata:
     image.openshift.io/triggers: >-
       [{"from":{"kind":"ImageStreamTag","name":"blog-django-py:latest","namespace":"fiap-aso-grupo14ronaldo"},"fieldPath":"spec.template.spec.containers[?(@.name==\"blog-django-py\")].image","pause":"false"}]
     openshift.io/generated-by: OpenShiftWebConsole
-  selfLink: /apis/apps/v1/namespaces/fiap-aso-grupo14/deployments/blog-django-py
+  selfLink: /apis/apps/v1/namespaces/fiap-aso-grupo14ronaldo/deployments/blog-django-py
   name: blog-django-py  
   generation: 2
   namespace: fiap-aso-grupo14ronaldo
@@ -75,7 +75,7 @@ metadata:
     app.openshift.io/vcs-ref: ''
     app.openshift.io/vcs-uri: 'https://github.com/openshift-instruqt/blog-django-py'
     openshift.io/generated-by: OpenShiftWebConsole
-  selfLink: /api/v1/namespaces/fiap-aso-grupo14/services/blog-django-py
+  selfLink: /api/v1/namespaces/fiap-aso-grupo14ronaldo/services/blog-django-py
   name: blog-django-py
   namespace: fiap-aso-grupo14ronaldo
   labels:
@@ -104,7 +104,7 @@ metadata:
   annotations:
     openshift.io/host.generated: 'true'
   selfLink: >-
-    /apis/route.openshift.io/v1/namespaces/fiap-aso-grupo14/routes/blog-django-py  
+    /apis/route.openshift.io/v1/namespaces/fiap-aso-grupo14ronaldo/routes/blog-django-py  
   name: blog-django-py
   namespace: fiap-aso-grupo14ronaldo
   labels:
@@ -126,7 +126,7 @@ spec:
   wildcardPolicy: None
 status:
   ingress:
-    - host: blog-django-py-fiap-aso-grupo14.apps.na46.prod.nextcle.com
+    - host: blog-django-py-fiap-aso-grupo14ronaldo.apps.na46.prod.nextcle.com
       routerName: default
       conditions:
         - type: Admitted
