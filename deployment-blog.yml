@@ -16,7 +16,7 @@ metadata:
     app.openshift.io/vcs-uri: 'https://github.com/openshift-instruqt/blog-django-py'
     deployment.kubernetes.io/revision: '2'
     image.openshift.io/triggers: >-
-      [{"from":{"kind":"ImageStreamTag","name":"blog-django-py:latest","namespace":"fiap-aso-grupo14"},"fieldPath":"spec.template.spec.containers[?(@.name==\"blog-django-py\")].image","pause":"false"}]
+      [{"from":{"kind":"ImageStreamTag","name":"blog-django-py:latest","namespace":"fiap-aso-grupo14ronaldo"},"fieldPath":"spec.template.spec.containers[?(@.name==\"blog-django-py\")].image","pause":"false"}]
     openshift.io/generated-by: OpenShiftWebConsole
   selfLink: /apis/apps/v1/namespaces/fiap-aso-grupo14/deployments/blog-django-py
   name: blog-django-py  
