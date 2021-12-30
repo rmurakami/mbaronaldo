@@ -7,9 +7,9 @@ metadata:
     template.openshift.io/expose-database_name: '{.data[''database-name'']}'
     template.openshift.io/expose-password: '{.data[''database-password'']}'
     template.openshift.io/expose-username: '{.data[''database-user'']}'
-  selfLink: /api/v1/namespaces/fiap-aso-grupo14ronaldo/secrets/sample-database
+  selfLink: /api/v1/namespaces/fiap-aso-grupo14murakami/secrets/sample-database
   name: sample-database  
-  namespace: fiap-aso-grupo14ronaldo
+  namespace: fiap-aso-grupo14murakami
   labels:
     app: sample-database
     app.kubernetes.io/component: sample-database
@@ -28,9 +28,9 @@ apiVersion: v1
 metadata:
   annotations:
     openshift.io/generated-by: OpenShiftNewApp
-  selfLink: /api/v1/namespaces/fiap-aso-grupo14ronaldo/services/sample-database
+  selfLink: /api/v1/namespaces/fiap-aso-grupo14murakami/services/sample-database
   name: sample-database
-  namespace: fiap-aso-grupo14ronaldo
+  namespace: fiap-aso-grupo14murakami
   labels:
     app: sample-database
     app.kubernetes.io/component: sample-database
@@ -56,9 +56,9 @@ metadata:
     openshift.io/generated-by: OpenShiftNewApp
     pv.kubernetes.io/bound-by-controller: 'yes'
     volume.beta.kubernetes.io/storage-provisioner: kubernetes.io/cinder
-  selfLink: /api/v1/namespaces/fiap-aso-grupo14ronaldo/persistentvolumeclaims/sample-database
+  selfLink: /api/v1/namespaces/fiap-aso-grupo14murakami/persistentvolumeclaims/sample-database
   name: sample-database
-  namespace: fiap-aso-grupo14ronaldo
+  namespace: fiap-aso-grupo14murakami
   labels:
     app: sample-database
     app.kubernetes.io/component: sample-database
@@ -80,10 +80,10 @@ metadata:
     openshift.io/generated-by: OpenShiftNewApp
     template.alpha.openshift.io/wait-for-ready: 'true'
   selfLink: >-
-    /apis/apps.openshift.io/v1/namespaces/fiap-aso-grupo14ronaldo/deploymentconfigs/sample-database
+    /apis/apps.openshift.io/v1/namespaces/fiap-aso-grupo14murakami/deploymentconfigs/sample-database
   name: sample-database
   generation: 2
-  namespace: fiap-aso-grupo14ronaldo
+  namespace: fiap-aso-grupo14murakami
   labels:
     app: sample-database
     app.kubernetes.io/component: sample-database
