@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: blog-config-map
-  namespace: fiap-aso-grupo14ronaldo
+  namespace: fiap-aso-grupo14murakami
 data:
   BLOG_SITE_NAME: FIAP Grupo 14
   BLOG_BANNER_COLOR: blue
@@ -16,12 +16,12 @@ metadata:
     app.openshift.io/vcs-uri: 'https://github.com/openshift-instruqt/blog-django-py'
     deployment.kubernetes.io/revision: '2'
     image.openshift.io/triggers: >-
-      [{"from":{"kind":"ImageStreamTag","name":"blog-django-py:latest","namespace":"fiap-aso-grupo14ronaldo"},"fieldPath":"spec.template.spec.containers[?(@.name==\"blog-django-py\")].image","pause":"false"}]
+      [{"from":{"kind":"ImageStreamTag","name":"blog-django-py:latest","namespace":"fiap-aso-grupo14murakami"},"fieldPath":"spec.template.spec.containers[?(@.name==\"blog-django-py\")].image","pause":"false"}]
     openshift.io/generated-by: OpenShiftWebConsole
-  selfLink: /apis/apps/v1/namespaces/fiap-aso-grupo14ronaldo/deployments/blog-django-py
+  selfLink: /apis/apps/v1/namespaces/fiap-aso-grupo14murakami/deployments/blog-django-py
   name: blog-django-py  
   generation: 2
-  namespace: fiap-aso-grupo14ronaldo
+  namespace: fiap-aso-grupo14murakami
   labels:
     app: blog-django-py
     app.kubernetes.io/component: blog-django-py
@@ -75,9 +75,9 @@ metadata:
     app.openshift.io/vcs-ref: ''
     app.openshift.io/vcs-uri: 'https://github.com/openshift-instruqt/blog-django-py'
     openshift.io/generated-by: OpenShiftWebConsole
-  selfLink: /api/v1/namespaces/fiap-aso-grupo14ronaldo/services/blog-django-py
+  selfLink: /api/v1/namespaces/fiap-aso-grupo14murakami/services/blog-django-py
   name: blog-django-py
-  namespace: fiap-aso-grupo14ronaldo
+  namespace: fiap-aso-grupo14murakami
   labels:
     app: blog-django-py
     app.kubernetes.io/component: blog-django-py
@@ -104,9 +104,9 @@ metadata:
   annotations:
     openshift.io/host.generated: 'true'
   selfLink: >-
-    /apis/route.openshift.io/v1/namespaces/fiap-aso-grupo14ronaldo/routes/blog-django-py  
+    /apis/route.openshift.io/v1/namespaces/fiap-aso-grupo14murakami/routes/blog-django-py  
   name: blog-django-py
-  namespace: fiap-aso-grupo14ronaldo
+  namespace: fiap-aso-grupo14murakami
   labels:
     app: blog-django-py
     app.kubernetes.io/component: blog-django-py
@@ -116,7 +116,7 @@ metadata:
     app.openshift.io/runtime: python
     app.openshift.io/runtime-version: 3.8-ubi7
 spec:
-  host: blog-django-py-fiap-aso-grupo14.apps.na46.prod.nextcle.com
+  host: blog-django-py-fiap-aso-grupo14murakami.apps.na46.prod.nextcle.com
   to:
     kind: Service
     name: blog-django-py
@@ -126,7 +126,7 @@ spec:
   wildcardPolicy: None
 status:
   ingress:
-    - host: blog-django-py-fiap-aso-grupo14ronaldo.apps.na46.prod.nextcle.com
+    - host: blog-django-py-fiap-aso-grupo14murakami.apps.na46.prod.nextcle.com
       routerName: default
       conditions:
         - type: Admitted
